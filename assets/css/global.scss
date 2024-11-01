@@ -1,0 +1,40 @@
+@import 'partials/_functions';
+@import 'partials/_variables';
+@import 'partials/_animates';
+
+#toplevel_page_socialshop{
+  .toplevel_page_socialshop{
+    padding-left: 35px !important;
+    .wp-menu-name{
+      padding-left: 0 !important;
+    }
+    .wp-menu-image{
+      float: none;
+      position: absolute;
+      border: 1px solid transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      border-radius: 4px;
+      background: #5B86E5;
+      left: 6px;
+      top: 5px;
+      width: 22px;
+      height: 22px;
+      box-sizing: border-box;
+      img{
+        padding: 0;
+        max-width: 100%;
+      }
+    }
+    &[aria-current="page"]{
+      border-color: transparent;
+      background: transparent;
+      .wp-menu-image{
+        border: 1px solid white;
+      }
+    }
+  }
+}
+//#toplevel_page_socialshop

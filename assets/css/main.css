@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap");
+@keyframes dots {
+  0%, 20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0); }
+  40% {
+    color: white;
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0); }
+  60% {
+    text-shadow: 0.25em 0 0 white, 0.5em 0 0 rgba(0, 0, 0, 0); }
+  80%, 100% {
+    text-shadow: .25em 0 0 white, .5em 0 0 white; } }
+@keyframes shadow-pulse-activate {
+  0% {
+    box-shadow: 0 0 0 0 rgba(194, 242, 216, 0.5); }
+  100% {
+    box-shadow: 0 0 0 10px rgba(194, 242, 216, 0.05); } }
+@keyframes shadow-pulse-deactivate {
+  0% {
+    box-shadow: 0 0 0 0 rgba(242, 84, 93, 0.5); }
+  100% {
+    box-shadow: 0 0 0 10px rgba(242, 84, 93, 0.05); } }
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes blink {
+  0% {
+    opacity: .2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: .2; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: .2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: .2; } }
+#wpfooter {
+  display: none; }
+
+#wpcontent {
+  padding-left: 0; }
+
+#wpbody {
+  background: linear-gradient(117.89deg, #F5F8FD 0%, #F4F6FA 99.6%); }
+  #wpbody #wpbody-content {
+    padding-bottom: 0;
+    padding-left: 0;
+    min-height: calc( 100vh - 46px );
+    min-height: -webkit-calc( 100vh - 46px );
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: calc( 100% - 2px );
+    width: -webkit-calc( 100% - 2px ); }
+  #wpbody #frame-socialhead {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-height: calc( 100vh - 46px );
+    min-height: -webkit-calc( 100vh - 46px );
+    overflow: hidden;
+    margin-left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; }
+  #wpbody #socialshop-page {
+    margin-bottom: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500; }
+    #wpbody #socialshop-page header {
+      margin-top: 50px; }
+    #wpbody #socialshop-page.loading-page #ssLogin {
+      position: relative;
+      opacity: 0.9; }
+      #wpbody #socialshop-page.loading-page #ssLogin span {
+        display: inline-block;
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        animation: rotation 2s infinite linear;
+        -webkit-animation: rotation 2s infinite linear; }
+        #wpbody #socialshop-page.loading-page #ssLogin span:after {
+          border-radius: 50%;
+          border: 2px solid white;
+          border-left-color: transparent;
+          content: " ";
+          display: block;
+          width: 16px;
+          height: 16px;
+          box-sizing: border-box;
+          backface-visibility: hidden;
+          right: 10px;
+          top: 4px;
+          transform-origin: center;
+          transform-box: fill-box; }
+    #wpbody #socialshop-page .notice {
+      display: inline-block;
+      padding: 10px 10px 5px;
+      margin: 10px 3px; }
+    #wpbody #socialshop-page .text-center {
+      text-align: center; }
+    #wpbody #socialshop-page a {
+      text-decoration: none; }
+    #wpbody #socialshop-page img {
+      margin-bottom: 15px; }
+    #wpbody #socialshop-page h2 {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 40px;
+      text-align: center;
+      margin-bottom: 15px;
+      margin-top: 0;
+      color: #163F59; }
+    #wpbody #socialshop-page p {
+      color: #768188;
+      max-width: 547px;
+      margin: 0 auto 5px auto;
+      font-weight: 400;
+      font-size: 14px; }
+    #wpbody #socialshop-page .ss-actions {
+      margin-top: 12px;
+      /* end .row-integration */ }
+      #wpbody #socialshop-page .ss-actions a, #wpbody #socialshop-page .ss-actions button {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500; }
+      #wpbody #socialshop-page .ss-actions button {
+        background: #5B86E5;
+        border-radius: 4px;
+        margin-right: 8px;
+        width: 160px;
+        height: 40px;
+        cursor: pointer; }
+      #wpbody #socialshop-page .ss-actions a {
+        text-decoration: none;
+        color: #5B86E5;
+        display: inline-block;
+        margin-left: 8px; }
+      #wpbody #socialshop-page .ss-actions .btn-primary {
+        background: #5B86E5;
+        border-radius: 3px;
+        color: white;
+        padding: 8px 24px;
+        font-size: 14px;
+        line-height: 19px;
+        border: 0; }
+        #wpbody #socialshop-page .ss-actions .btn-primary:hover {
+          opacity: 0.8; }
+    #wpbody #socialshop-page footer {
+      font-size: 13px;
+      line-height: 20px;
+      padding: 0;
+      position: absolute;
+      width: 100%;
+      bottom: 0; }
+      #wpbody #socialshop-page footer .d-flex {
+        display: -ms-flexbox !important;
+        display: flex !important; }
+      #wpbody #socialshop-page footer .justify-content-center {
+        -ms-flex-pack: center !important;
+        justify-content: center !important; }
+      #wpbody #socialshop-page footer .align-items-center {
+        -ms-flex-align: center !important;
+        align-items: center !important; }
+      #wpbody #socialshop-page footer ul {
+        margin-bottom: 0; }
+      #wpbody #socialshop-page footer li {
+        margin-right: 14px;
+        margin-bottom: 0;
+        position: relative; }
+        #wpbody #socialshop-page footer li:before {
+          content: '';
+          display: inline-block;
+          width: 5px;
+          height: 5px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          background: #39332E;
+          top: 8px;
+          position: absolute;
+          left: 0; }
+        #wpbody #socialshop-page footer li:first-child:before {
+          display: none; }
+        #wpbody #socialshop-page footer li:first-child a {
+          color: #5b86e5;
+          padding-left: 0; }
+        #wpbody #socialshop-page footer li:last-child {
+          margin-right: 0; }
+      #wpbody #socialshop-page footer a {
+        color: #39332E;
+        font-size: 13px;
+        line-height: 20px;
+        padding-left: 10px; }
+        #wpbody #socialshop-page footer a:hover {
+          color: #5b86e5; }
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(359deg); } }
+/* width */
+::-webkit-scrollbar {
+  width: 0; }
+
+/* button */
+::-webkit-scrollbar-button {
+  background: #222; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #666; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000; }
+
+/* The track NOT covered by the handle.
+::-webkit-scrollbar-track-piece {
+    background: #000;
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+  background: #999; }
+
+/* Resizer */
+::-webkit-resizer {
+  background: #111; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,75 @@
+@keyframes dots {
+  0%, 20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0); }
+  40% {
+    color: white;
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0); }
+  60% {
+    text-shadow: 0.25em 0 0 white, 0.5em 0 0 rgba(0, 0, 0, 0); }
+  80%, 100% {
+    text-shadow: .25em 0 0 white, .5em 0 0 white; } }
+@keyframes shadow-pulse-activate {
+  0% {
+    box-shadow: 0 0 0 0 rgba(194, 242, 216, 0.5); }
+  100% {
+    box-shadow: 0 0 0 10px rgba(194, 242, 216, 0.05); } }
+@keyframes shadow-pulse-deactivate {
+  0% {
+    box-shadow: 0 0 0 0 rgba(242, 84, 93, 0.5); }
+  100% {
+    box-shadow: 0 0 0 10px rgba(242, 84, 93, 0.05); } }
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes blink {
+  0% {
+    opacity: .2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: .2; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: .2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: .2; } }
+#toplevel_page_socialshop .toplevel_page_socialshop {
+  padding-left: 35px !important; }
+  #toplevel_page_socialshop .toplevel_page_socialshop .wp-menu-name {
+    padding-left: 0 !important; }
+  #toplevel_page_socialshop .toplevel_page_socialshop .wp-menu-image {
+    float: none;
+    position: absolute;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 4px;
+    background: #5B86E5;
+    left: 6px;
+    top: 5px;
+    width: 22px;
+    height: 22px;
+    box-sizing: border-box; }
+    #toplevel_page_socialshop .toplevel_page_socialshop .wp-menu-image img {
+      padding: 0;
+      max-width: 100%; }
+  #toplevel_page_socialshop .toplevel_page_socialshop[aria-current="page"] {
+    border-color: transparent;
+    background: transparent; }
+    #toplevel_page_socialshop .toplevel_page_socialshop[aria-current="page"] .wp-menu-image {
+      border: 1px solid white; }
+
+/*# sourceMappingURL=global.css.map */

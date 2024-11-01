@@ -1,0 +1,11 @@
+@mixin _font($weight: 400){
+  font-family: 'Inter', sans-serif;
+  font-weight: $weight;
+}
+@mixin _transition( $time: 0.5s ){
+  -webkit-transition: all $time ease;
+  -moz-transition: all $time ease;
+  -ms-transition: all $time ease;
+  -o-transition: all $time ease;
+  transition: all $time ease;
+}
